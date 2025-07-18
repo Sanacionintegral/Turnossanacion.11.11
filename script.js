@@ -1,5 +1,5 @@
 const whatsapp = '2235931151';
-const urlAPI = 'https://script.google.com/macros/s/AKfycbxc2ftIG0__swK4ds3Oy9Q8UNym1Ysw73Km9HjA2EMZDqJmyzXVHz_Sn2GBA85DXHNMCg/exec?';
+const urlAPI = 'https://script.google.com/macros/s/AKfycbxKjme6Uk9r-XpUF918J_skxVqHHGWc_u2Y9dlkhonlZa2PXuiK1TATT_gGq_MQ8VVF/exec';
 let turnos = [];
 let reservados = [];
 
