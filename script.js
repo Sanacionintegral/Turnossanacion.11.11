@@ -85,7 +85,7 @@ async function reservarTurno(nro, dia, hora) {
 
   setTimeout(() => {
     const mensajeWp = `Ya reservé mi turno para el ${dia} a las ${hora}. Mi nombre es ${nombre}.`;
-    window.open(`https://api.whatsapp.com/send?phone=54${whatsapp}&text=${encodeURIComponent(mensajeWp)}`, '_blank');
+    window.location.href = `https://wa.me/54${whatsapp}?text=${encodeURIComponent(mensajeWp)}`;
   }, 1000);
 }
 
