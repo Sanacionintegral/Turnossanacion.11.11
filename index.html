@@ -1,15 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Turnos</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserva tu Sesión Energética</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f0ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #3c006b;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #800080;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #5e005e;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .footer a {
+      color: #800080;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h2>Turnos disponibles</h2>
-  <div id="turnos"></div>
-  <div id="mensaje">✅ ¡Turno reservado con éxito!</div>
+  <div class="container">
+    <h2>Reservá tu sesión energética</h2>
+    <input type="text" placeholder="Tu nombre" id="nombre">
+    <input type="text" placeholder="Tu celular" id="celular">
+    
+    <select id="dia">
+      <option>Cargando días...</option>
+    </select>
+    
+    <select id="hora">
+      <option>Seleccioná un día primero</option>
+    </select>
+
+    <button onclick="reservar()">Reservar Turno</button>
+
+    <div id="mensaje" style="display:none; margin-top: 20px; color: green; text-align:center;">✅ ¡Turno reservado!</div>
+  </div>
+
+  <div class="footer">
+    📲 <a href="https://wa.me/5492235931151" target="_blank">+54 9 223 593-1151</a><br>
+    📍 <a href="https://instagram.com/sanacion11.11" target="_blank">@sanacion11.11</a>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
